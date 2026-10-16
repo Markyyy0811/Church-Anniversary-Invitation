@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ceb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4f46e5">
+  <title>Usa ka Matinahurong Paghangyo | Para kang Kath</title>
+  <style>
+    :root {
+      --purple: #4f46e5;
+      --violet: #7c3aed;
+      --ink: #292344;
+      --muted: #6d6882;
+      --paper: #ffffff;
+      --line: #e9e5f7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 28px 16px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(167,139,250,.35), transparent 30%),
+        radial-gradient(circle at 90% 90%, rgba(129,140,248,.28), transparent 28%),
+        linear-gradient(135deg, #f5f3ff, #eef2ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .page { width: 100%; max-width: 760px; }
+    .top {
+      text-align: center;
+      margin: 0 auto 18px;
+      font-family: Arial, sans-serif;
+      color: #5b4ca1;
+      letter-spacing: .16em;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .letter {
+      position: relative;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid rgba(124,58,237,.15);
+      border-radius: 22px;
+      padding: clamp(24px, 6vw, 52px);
+      box-shadow: 0 24px 70px rgba(54, 38, 105, .13);
+    }
+    .letter::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 7px;
+      background: linear-gradient(90deg, var(--purple), var(--violet), #a78bfa);
+    }
+    .seal {
+      margin: 0 auto 16px;
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: white;
+      font-size: 24px;
+      background: linear-gradient(145deg, var(--purple), var(--violet));
+      box-shadow: 0 8px 20px rgba(79,70,229,.24);
+    }
+    h1 {
+      text-align: center;
+      font-size: clamp(25px, 5vw, 36px);
+      line-height: 1.2;
+      margin: 0;
+      color: #35266e;
+      font-weight: 600;
+    }
+    .subtitle {
+      text-align: center;
+      margin: 10px 0 28px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .rule {
+      width: 68px;
+      height: 2px;
+      border: 0;
+      margin: 0 auto 28px;
+      background: linear-gradient(90deg, var(--purple), #c4b5fd);
+    }
+    .event {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 0 0 28px;
+      font-family: Arial, sans-serif;
+    }
+    .event-item {
+      background: #f7f5ff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 13px 10px;
+      text-align: center;
+      min-width: 0;
+    }
+    .event-item .label {
+      display: block;
+      margin-bottom: 6px;
+      color: #786ca8;
+      font-size: 10px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .event-item .value {
+      font-size: 12px;
+      line-height: 1.45;
+      color: #33285f;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+    .body-copy { font-size: 16px; line-height: 1.85; }
+    .body-copy p { margin: 0 0 17px; }
+    .body-copy .greeting { font-weight: bold; color: #4b328b; }
+    .signoff { margin-top: 25px; }
+    .signature { margin-top: 7px; font-size: 18px; font-weight: bold; color: #4f46e5; }
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #77718c;
+      font: 12px/1.6 Arial, sans-serif;
+    }
+    @media (max-width: 520px) {
+      body { padding: 18px 10px; align-items: flex-start; }
+      .letter { border-radius: 17px; padding: 27px 21px; }
+      .event { grid-template-columns: 1fr; gap: 8px; }
+      .event-item { display: flex; align-items: center; justify-content: space-between; text-align: left; padding: 11px 13px; gap: 12px; }
+      .event-item .label { margin: 0; flex: 0 0 auto; }
+      .event-item .value { text-align: right; }
+      .body-copy { font-size: 15px; line-height: 1.8; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="top">Usa ka matinahurong paghangyo</div>
+    <article class="letter">
+      <div class="seal" aria-hidden="true">♡</div>
+      <h1>Paghangyo og Pagtugot</h1>
+      <p class="subtitle">Usa ka espesyal nga imbitasyon alang kang Kath De Guzman</p>
+      <hr class="rule">
+
+      <section class="event" aria-label="Mga detalye sa event">
+        <div class="event-item">
+          <span class="label">Petsa</span>
+          <span class="value">November 29, 2026</span>
+        </div>
+        <div class="event-item">
+          <span class="label">Oras</span>
+          <span class="value">10:00 AM – 3:00 PM</span>
+        </div>
+        <div class="event-item">
+          <span class="label">Lugar</span>
+          <span class="value">Optimum One Building, Lapu-Lapu City</span>
+        </div>
+      </section>
+
+      <div class="body-copy">
+        <p class="greeting">Maayong adlaw po.</p>
+
+        <p>Una sa tanan, gusto ko magpakita sa akong respeto kaninyo ug mangayo sa inyong pagtugot sa usa ka butang nga importante para nako.</p>
+
+        <p>Sa umaabot nga 1st Church Anniversary sa Jesus the Anointed One Church (JA1) karong November 29, 2026, naa unta koy plano nga imbitahon si Kath De Guzman nga moapil ug mosimba uban namo. Gusto nako nga makig-share siya sa usa ka espesyal nga adlaw para sa among church.</p>
+
+        <p>Ang anniversary pagahimoon sa Optimum One Building, Lapu-Lapu City, gikan sa 10:00 AM hangtod 3:00 PM.</p>
+
+        <p>Sa dili pa nako siya imbitahon, mas gusto nako nga mangayo una sa inyong permiso ug panalangin. Dili ko gusto nga molapas sa inyong pagsalig o makapahimo og bisan unsang butang nga dili komportable para ninyo. Akong tuyo kay matinahuron ug tarong, ug respetohon nako ang inyong desisyon ug bisan unsang kondisyon nga inyong ihatag.</p>
+
+        <p>Kung okay ra ninyo, malipay kaayo ko nga hatagan ninyo ko og pagtugot nga imbitahon siya. Salamat kaayo sa inyong oras, pagsabot, ug konsiderasyon.</p>
+
+        <p>God bless po, ug daghang salamat.</p>
+
+        <div class="signoff">
+          <p>Matinahuron nga naghangyo,</p>
+          <div class="signature">Mark Calambro</div>
+        </div>
+      </div>
+    </article>
+    <div class="footer">Gihimo uban sa respeto ug maayong tuyo.</div>
+  </main>
+</body>
+</html>
